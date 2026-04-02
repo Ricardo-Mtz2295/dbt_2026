@@ -1,28 +1,4 @@
 
-# Name your project! Project names should contain only lowercase characters
-# /
-Greenweez
-
-
-Developer
-Change branch
-
-
-Create a pull request on GitHub
-
-
-
-Save
-3233343536373839404142434445
-
-
-
-Commands
-Problems
-Code quality
-Lineage
-
-$0and underscores. A good package name should reflect your organization's
 # name or the intended use of these models
 name: 'my_new_project'
 version: '1.0.0'
