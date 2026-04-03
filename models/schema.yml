@@ -8,7 +8,7 @@ sources:
     tables:
       - name: sales
         identifier: raw_gz_sales
-        description: sales of Greenweez / we have on row per product_id found in each orders_id
+        description: sales of Greenweez / we have one row per product_id found in each orders_id
         config: 
           loaded_at_field: "CAST(date_date AS TIMESTAMP)"
           freshness:
@@ -53,6 +53,18 @@ sources:
              description: the cost of preparing the parcel in the distribution centre/warehouse
            - name: ship_cost
              description: shipping cost paid by Greenweez to the carrier/logistics provider
+      - name: adwords
+        identifier: raw_gz_adwords
+        description: Advertising data from Google Adwords campaigns including cost, impressions and clicks
+      - name: bing
+        identifier: raw_gz_bing
+        description: Advertising data from Bing campaigns including cost, impressions and clicks
+      - name: criteo
+        identifier: raw_gz_criteo
+        description: Advertising data from Criteo campaigns including cost, impressions and clicks
+      - name: facebook
+        identifier: raw_gz_facebook
+        description: Advertising data from Facebook Ads campaigns including cost, impressions and clicks
 
 models:
   - name: int_sales_margin
